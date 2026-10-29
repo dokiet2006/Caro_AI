@@ -1,0 +1,235 @@
+{
+  "format": "caro-ai-experiments-v1",
+  "started_utc": "2026-10-29T07:20:15.473214+00:00",
+  "complete": true,
+  "smoke": false,
+  "required_games_met": true,
+  "games_per_config": 20,
+  "pairs_per_config": 10,
+  "seed": 2026,
+  "python": "3.12.14",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "cpu_model": "AMD EPYC 9V74 80-Core Processor",
+  "logical_cpus": 9,
+  "time_limit_seconds": null,
+  "timing": "perf_counter inside choose; move-weighted mean; sequential games",
+  "seed_rule": "pair p (zero based): subject=seed+10000*p+11, opponent=seed+10000*p+29; reuse on swapped leg",
+  "opening": "empty board; X first; no random opening",
+  "win_rule": "at least five, including blocked ends and overlines",
+  "reward": "win=1, draw=0.5, loss=0; per node player_just_moved",
+  "mcts_moves": "all legal moves; random expansion; final maximum visits",
+  "sweep_opponent": {
+    "algorithm": "random",
+    "depth": 2,
+    "candidates": 10,
+    "iterations": 300,
+    "c": 1.4,
+    "rollout": "random"
+  },
+  "jobs": [
+    {
+      "family": "round_robin",
+      "name": "alphabeta_vs_random",
+      "subject": {
+        "algorithm": "alphabeta",
+        "depth": 2,
+        "candidates": 10,
+        "iterations": 300,
+        "c": 1.4,
+        "rollout": "random"
+      },
+      "opponent": {
+        "algorithm": "random",
+        "depth": 2,
+        "candidates": 10,
+        "iterations": 300,
+        "c": 1.4,
+        "rollout": "random"
+      }
+    },
+    {
+      "family": "round_robin",
+      "name": "mcts_vs_random",
+      "subject": {
+        "algorithm": "mcts",
+        "depth": 2,
+        "candidates": 10,
+        "iterations": 300,
+        "c": 1.4,
+        "rollout": "random"
+      },
+      "opponent": {
+        "algorithm": "random",
+        "depth": 2,
+        "candidates": 10,
+        "iterations": 300,
+        "c": 1.4,
+        "rollout": "random"
+      }
+    },
+    {
+      "family": "round_robin",
+      "name": "mcts_vs_alphabeta",
+      "subject": {
+        "algorithm": "mcts",
+        "depth": 2,
+        "candidates": 10,
+        "iterations": 300,
+        "c": 1.4,
+        "rollout": "random"
+      },
+      "opponent": {
+        "algorithm": "alphabeta",
+        "depth": 2,
+        "candidates": 10,
+        "iterations": 300,
+        "c": 1.4,
+        "rollout": "random"
+      }
+    },
+    {
+      "family": "c_sweep",
+      "name": "c=0.5",
+      "subject": {
+        "algorithm": "mcts",
+        "depth": 2,
+        "candidates": 10,
+        "iterations": 300,
+        "c": 0.5,
+        "rollout": "random"
+      },
+      "opponent": {
+        "algorithm": "random",
+        "depth": 2,
+        "candidates": 10,
+        "iterations": 300,
+        "c": 1.4,
+        "rollout": "random"
+      }
+    },
+    {
+      "family": "c_sweep",
+      "name": "c=1.0",
+      "subject": {
+        "algorithm": "mcts",
+        "depth": 2,
+        "candidates": 10,
+        "iterations": 300,
+        "c": 1.0,
+        "rollout": "random"
+      },
+      "opponent": {
+        "algorithm": "random",
+        "depth": 2,
+        "candidates": 10,
+        "iterations": 300,
+        "c": 1.4,
+        "rollout": "random"
+      }
+    },
+    {
+      "family": "c_sweep",
+      "name": "c=1.4",
+      "subject": {
+        "algorithm": "mcts",
+        "depth": 2,
+        "candidates": 10,
+        "iterations": 300,
+        "c": 1.4,
+        "rollout": "random"
+      },
+      "opponent": {
+        "algorithm": "random",
+        "depth": 2,
+        "candidates": 10,
+        "iterations": 300,
+        "c": 1.4,
+        "rollout": "random"
+      }
+    },
+    {
+      "family": "c_sweep",
+      "name": "c=2.0",
+      "subject": {
+        "algorithm": "mcts",
+        "depth": 2,
+        "candidates": 10,
+        "iterations": 300,
+        "c": 2.0,
+        "rollout": "random"
+      },
+      "opponent": {
+        "algorithm": "random",
+        "depth": 2,
+        "candidates": 10,
+        "iterations": 300,
+        "c": 1.4,
+        "rollout": "random"
+      }
+    },
+    {
+      "family": "iteration_sweep",
+      "name": "iterations=100",
+      "subject": {
+        "algorithm": "mcts",
+        "depth": 2,
+        "candidates": 10,
+        "iterations": 100,
+        "c": 1.4,
+        "rollout": "random"
+      },
+      "opponent": {
+        "algorithm": "random",
+        "depth": 2,
+        "candidates": 10,
+        "iterations": 300,
+        "c": 1.4,
+        "rollout": "random"
+      }
+    },
+    {
+      "family": "iteration_sweep",
+      "name": "iterations=300",
+      "subject": {
+        "algorithm": "mcts",
+        "depth": 2,
+        "candidates": 10,
+        "iterations": 300,
+        "c": 1.4,
+        "rollout": "random"
+      },
+      "opponent": {
+        "algorithm": "random",
+        "depth": 2,
+        "candidates": 10,
+        "iterations": 300,
+        "c": 1.4,
+        "rollout": "random"
+      }
+    },
+    {
+      "family": "iteration_sweep",
+      "name": "iterations=500",
+      "subject": {
+        "algorithm": "mcts",
+        "depth": 2,
+        "candidates": 10,
+        "iterations": 500,
+        "c": 1.4,
+        "rollout": "random"
+      },
+      "opponent": {
+        "algorithm": "random",
+        "depth": 2,
+        "candidates": 10,
+        "iterations": 300,
+        "c": 1.4,
+        "rollout": "random"
+      }
+    }
+  ],
+  "finished_utc": "2026-10-29T07:21:27.440886+00:00",
+  "total_games": 200,
+  "total_seconds": 71.962176967,
+  "pruning_benchmark_depth": 3
+}

@@ -1,0 +1,2892 @@
+{
+  "format": "caro-ai-game-v1",
+  "created_utc": "2026-10-29T07:20:36.643049+00:00",
+  "seed": 2026,
+  "board_size": 9,
+  "win_length": 5,
+  "configs": {
+    "X": {
+      "algorithm": "mcts",
+      "depth": 2,
+      "candidates": 10,
+      "iterations": 100,
+      "c": 1.4,
+      "rollout": "random"
+    },
+    "O": {
+      "algorithm": "alphabeta",
+      "depth": 2,
+      "candidates": 10,
+      "iterations": 300,
+      "c": 1.4,
+      "rollout": "random"
+    }
+  },
+  "moves": [
+    {
+      "ply": 1,
+      "player": "X",
+      "move": 49,
+      "algorithm": "mcts",
+      "elapsed_ms": 15.546145999906003,
+      "nodes": 101,
+      "depth": 0,
+      "cutoffs": 0,
+      "iterations": 100,
+      "score": 1.0,
+      "max_tree_depth": 2,
+      "rollout_moves": 5348,
+      "root_children": [
+        {
+          "move": 5,
+          "coordinate": "F1",
+          "visits": 2,
+          "reward_sum": 2.0,
+          "mean_reward": 1.0
+        },
+        {
+          "move": 13,
+          "coordinate": "E2",
+          "visits": 2,
+          "reward_sum": 2.0,
+          "mean_reward": 1.0
+        },
+        {
+          "move": 17,
+          "coordinate": "I2",
+          "visits": 2,
+          "reward_sum": 2.0,
+          "mean_reward": 1.0
+        },
+        {
+          "move": 22,
+          "coordinate": "E3",
+          "visits": 2,
+          "reward_sum": 2.0,
+          "mean_reward": 1.0
+        },
+        {
+          "move": 25,
+          "coordinate": "H3",
+          "visits": 2,
+          "reward_sum": 2.0,
+          "mean_reward": 1.0
+        },
+        {
+          "move": 28,
+          "coordinate": "B4",
+          "visits": 2,
+          "reward_sum": 2.0,
+          "mean_reward": 1.0
+        },
+        {
+          "move": 29,
+          "coordinate": "C4",
+          "visits": 2,
+          "reward_sum": 2.0,
+          "mean_reward": 1.0
+        },
+        {
+          "move": 33,
+          "coordinate": "G4",
+          "visits": 2,
+          "reward_sum": 1.0,
+          "mean_reward": 0.5
+        },
+        {
+          "move": 39,
+          "coordinate": "D5",
+          "visits": 2,
+          "reward_sum": 1.0,
+          "mean_reward": 0.5
+        },
+        {
+          "move": 49,
+          "coordinate": "E6",
+          "visits": 2,
+          "reward_sum": 2.0,
+          "mean_reward": 1.0
+        },
+        {
+          "move": 56,
+          "coordinate": "C7",
+          "visits": 2,
+          "reward_sum": 2.0,
+          "mean_reward": 1.0
+        },
+        {
+          "move": 58,
+          "coordinate": "E7",
+          "visits": 2,
+          "reward_sum": 2.0,
+          "mean_reward": 1.0
+        },
+        {
+          "move": 72,
+          "coordinate": "A9",
+          "visits": 2,
+          "reward_sum": 2.0,
+          "mean_reward": 1.0
+        },
+        {
+          "move": 74,
+          "coordinate": "C9",
+          "visits": 2,
+          "reward_sum": 1.0,
+          "mean_reward": 0.5
+        },
+        {
+          "move": 75,
+          "coordinate": "D9",
+          "visits": 2,
+          "reward_sum": 1.0,
+          "mean_reward": 0.5
+        },
+        {
+          "move": 76,
+          "coordinate": "E9",
+          "visits": 2,
+          "reward_sum": 1.0,
+          "mean_reward": 0.5
+        },
+        {
+          "move": 77,
+          "coordinate": "F9",
+          "visits": 2,
+          "reward_sum": 1.0,
+          "mean_reward": 0.5
+        },
+        {
+          "move": 78,
+          "coordinate": "G9",
+          "visits": 2,
+          "reward_sum": 2.0,
+          "mean_reward": 1.0
+        },
+        {
+          "move": 80,
+          "coordinate": "I9",
+          "visits": 2,
+          "reward_sum": 1.0,
+          "mean_reward": 0.5
+        },
+        {
+          "move": 0,
+          "coordinate": "A1",
+          "visits": 1,
+          "reward_sum": 1.0,
+          "mean_reward": 1.0
+        },
+        {
+          "move": 1,
+          "coordinate": "B1",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 2,
+          "coordinate": "C1",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 3,
+          "coordinate": "D1",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 4,
+          "coordinate": "E1",
+          "visits": 1,
+          "reward_sum": 1.0,
+          "mean_reward": 1.0
+        },
+        {
+          "move": 6,
+          "coordinate": "G1",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 7,
+          "coordinate": "H1",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 8,
+          "coordinate": "I1",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 9,
+          "coordinate": "A2",
+          "visits": 1,
+          "reward_sum": 1.0,
+          "mean_reward": 1.0
+        },
+        {
+          "move": 10,
+          "coordinate": "B2",
+          "visits": 1,
+          "reward_sum": 1.0,
+          "mean_reward": 1.0
+        },
+        {
+          "move": 11,
+          "coordinate": "C2",
+          "visits": 1,
+          "reward_sum": 1.0,
+          "mean_reward": 1.0
+        },
+        {
+          "move": 12,
+          "coordinate": "D2",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 14,
+          "coordinate": "F2",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 15,
+          "coordinate": "G2",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 16,
+          "coordinate": "H2",
+          "visits": 1,
+          "reward_sum": 1.0,
+          "mean_reward": 1.0
+        },
+        {
+          "move": 18,
+          "coordinate": "A3",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 19,
+          "coordinate": "B3",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 20,
+          "coordinate": "C3",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 21,
+          "coordinate": "D3",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 23,
+          "coordinate": "F3",
+          "visits": 1,
+          "reward_sum": 1.0,
+          "mean_reward": 1.0
+        },
+        {
+          "move": 24,
+          "coordinate": "G3",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 26,
+          "coordinate": "I3",
+          "visits": 1,
+          "reward_sum": 1.0,
+          "mean_reward": 1.0
+        },
+        {
+          "move": 27,
+          "coordinate": "A4",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 30,
+          "coordinate": "D4",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 31,
+          "coordinate": "E4",
+          "visits": 1,
+          "reward_sum": 1.0,
+          "mean_reward": 1.0
+        },
+        {
+          "move": 32,
+          "coordinate": "F4",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 34,
+          "coordinate": "H4",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 35,
+          "coordinate": "I4",
+          "visits": 1,
+          "reward_sum": 1.0,
+          "mean_reward": 1.0
+        },
+        {
+          "move": 36,
+          "coordinate": "A5",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 37,
+          "coordinate": "B5",
+          "visits": 1,
+          "reward_sum": 1.0,
+          "mean_reward": 1.0
+        },
+        {
+          "move": 38,
+          "coordinate": "C5",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 40,
+          "coordinate": "E5",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 41,
+          "coordinate": "F5",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 42,
+          "coordinate": "G5",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 43,
+          "coordinate": "H5",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 44,
+          "coordinate": "I5",
+          "visits": 1,
+          "reward_sum": 1.0,
+          "mean_reward": 1.0
+        },
+        {
+          "move": 45,
+          "coordinate": "A6",
+          "visits": 1,
+          "reward_sum": 1.0,
+          "mean_reward": 1.0
+        },
+        {
+          "move": 46,
+          "coordinate": "B6",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 47,
+          "coordinate": "C6",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 48,
+          "coordinate": "D6",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 50,
+          "coordinate": "F6",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 51,
+          "coordinate": "G6",
+          "visits": 1,
+          "reward_sum": 1.0,
+          "mean_reward": 1.0
+        },
+        {
+          "move": 52,
+          "coordinate": "H6",
+          "visits": 1,
+          "reward_sum": 1.0,
+          "mean_reward": 1.0
+        },
+        {
+          "move": 53,
+          "coordinate": "I6",
+          "visits": 1,
+          "reward_sum": 1.0,
+          "mean_reward": 1.0
+        },
+        {
+          "move": 54,
+          "coordinate": "A7",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 55,
+          "coordinate": "B7",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 57,
+          "coordinate": "D7",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 59,
+          "coordinate": "F7",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 60,
+          "coordinate": "G7",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 61,
+          "coordinate": "H7",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 62,
+          "coordinate": "I7",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 63,
+          "coordinate": "A8",
+          "visits": 1,
+          "reward_sum": 1.0,
+          "mean_reward": 1.0
+        },
+        {
+          "move": 64,
+          "coordinate": "B8",
+          "visits": 1,
+          "reward_sum": 1.0,
+          "mean_reward": 1.0
+        },
+        {
+          "move": 65,
+          "coordinate": "C8",
+          "visits": 1,
+          "reward_sum": 1.0,
+          "mean_reward": 1.0
+        },
+        {
+          "move": 66,
+          "coordinate": "D8",
+          "visits": 1,
+          "reward_sum": 1.0,
+          "mean_reward": 1.0
+        },
+        {
+          "move": 67,
+          "coordinate": "E8",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 68,
+          "coordinate": "F8",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 69,
+          "coordinate": "G8",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 70,
+          "coordinate": "H8",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 71,
+          "coordinate": "I8",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 73,
+          "coordinate": "B9",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 79,
+          "coordinate": "H9",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        }
+      ],
+      "coordinate": "E6"
+    },
+    {
+      "ply": 2,
+      "player": "O",
+      "move": 40,
+      "algorithm": "alphabeta",
+      "elapsed_ms": 2.443243000016082,
+      "nodes": 30,
+      "depth": 2,
+      "cutoffs": 9,
+      "iterations": 0,
+      "score": -60,
+      "max_tree_depth": 0,
+      "rollout_moves": 0,
+      "root_children": [],
+      "coordinate": "E5"
+    },
+    {
+      "ply": 3,
+      "player": "X",
+      "move": 8,
+      "algorithm": "mcts",
+      "elapsed_ms": 14.999054000099932,
+      "nodes": 101,
+      "depth": 0,
+      "cutoffs": 0,
+      "iterations": 100,
+      "score": 1.0,
+      "max_tree_depth": 2,
+      "rollout_moves": 5064,
+      "root_children": [
+        {
+          "move": 0,
+          "coordinate": "A1",
+          "visits": 2,
+          "reward_sum": 1.0,
+          "mean_reward": 0.5
+        },
+        {
+          "move": 8,
+          "coordinate": "I1",
+          "visits": 2,
+          "reward_sum": 2.0,
+          "mean_reward": 1.0
+        },
+        {
+          "move": 9,
+          "coordinate": "A2",
+          "visits": 2,
+          "reward_sum": 1.0,
+          "mean_reward": 0.5
+        },
+        {
+          "move": 11,
+          "coordinate": "C2",
+          "visits": 2,
+          "reward_sum": 1.0,
+          "mean_reward": 0.5
+        },
+        {
+          "move": 12,
+          "coordinate": "D2",
+          "visits": 2,
+          "reward_sum": 1.0,
+          "mean_reward": 0.5
+        },
+        {
+          "move": 20,
+          "coordinate": "C3",
+          "visits": 2,
+          "reward_sum": 1.0,
+          "mean_reward": 0.5
+        },
+        {
+          "move": 27,
+          "coordinate": "A4",
+          "visits": 2,
+          "reward_sum": 1.0,
+          "mean_reward": 0.5
+        },
+        {
+          "move": 32,
+          "coordinate": "F4",
+          "visits": 2,
+          "reward_sum": 2.0,
+          "mean_reward": 1.0
+        },
+        {
+          "move": 33,
+          "coordinate": "G4",
+          "visits": 2,
+          "reward_sum": 2.0,
+          "mean_reward": 1.0
+        },
+        {
+          "move": 38,
+          "coordinate": "C5",
+          "visits": 2,
+          "reward_sum": 1.0,
+          "mean_reward": 0.5
+        },
+        {
+          "move": 44,
+          "coordinate": "I5",
+          "visits": 2,
+          "reward_sum": 2.0,
+          "mean_reward": 1.0
+        },
+        {
+          "move": 46,
+          "coordinate": "B6",
+          "visits": 2,
+          "reward_sum": 1.0,
+          "mean_reward": 0.5
+        },
+        {
+          "move": 47,
+          "coordinate": "C6",
+          "visits": 2,
+          "reward_sum": 2.0,
+          "mean_reward": 1.0
+        },
+        {
+          "move": 48,
+          "coordinate": "D6",
+          "visits": 2,
+          "reward_sum": 1.0,
+          "mean_reward": 0.5
+        },
+        {
+          "move": 52,
+          "coordinate": "H6",
+          "visits": 2,
+          "reward_sum": 1.0,
+          "mean_reward": 0.5
+        },
+        {
+          "move": 54,
+          "coordinate": "A7",
+          "visits": 2,
+          "reward_sum": 2.0,
+          "mean_reward": 1.0
+        },
+        {
+          "move": 58,
+          "coordinate": "E7",
+          "visits": 2,
+          "reward_sum": 2.0,
+          "mean_reward": 1.0
+        },
+        {
+          "move": 61,
+          "coordinate": "H7",
+          "visits": 2,
+          "reward_sum": 1.0,
+          "mean_reward": 0.5
+        },
+        {
+          "move": 64,
+          "coordinate": "B8",
+          "visits": 2,
+          "reward_sum": 1.0,
+          "mean_reward": 0.5
+        },
+        {
+          "move": 65,
+          "coordinate": "C8",
+          "visits": 2,
+          "reward_sum": 1.0,
+          "mean_reward": 0.5
+        },
+        {
+          "move": 79,
+          "coordinate": "H9",
+          "visits": 2,
+          "reward_sum": 2.0,
+          "mean_reward": 1.0
+        },
+        {
+          "move": 1,
+          "coordinate": "B1",
+          "visits": 1,
+          "reward_sum": 1.0,
+          "mean_reward": 1.0
+        },
+        {
+          "move": 2,
+          "coordinate": "C1",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 3,
+          "coordinate": "D1",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 4,
+          "coordinate": "E1",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 5,
+          "coordinate": "F1",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 6,
+          "coordinate": "G1",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 7,
+          "coordinate": "H1",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 10,
+          "coordinate": "B2",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 13,
+          "coordinate": "E2",
+          "visits": 1,
+          "reward_sum": 1.0,
+          "mean_reward": 1.0
+        },
+        {
+          "move": 14,
+          "coordinate": "F2",
+          "visits": 1,
+          "reward_sum": 1.0,
+          "mean_reward": 1.0
+        },
+        {
+          "move": 15,
+          "coordinate": "G2",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 16,
+          "coordinate": "H2",
+          "visits": 1,
+          "reward_sum": 1.0,
+          "mean_reward": 1.0
+        },
+        {
+          "move": 17,
+          "coordinate": "I2",
+          "visits": 1,
+          "reward_sum": 1.0,
+          "mean_reward": 1.0
+        },
+        {
+          "move": 18,
+          "coordinate": "A3",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 19,
+          "coordinate": "B3",
+          "visits": 1,
+          "reward_sum": 1.0,
+          "mean_reward": 1.0
+        },
+        {
+          "move": 21,
+          "coordinate": "D3",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 22,
+          "coordinate": "E3",
+          "visits": 1,
+          "reward_sum": 1.0,
+          "mean_reward": 1.0
+        },
+        {
+          "move": 23,
+          "coordinate": "F3",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 24,
+          "coordinate": "G3",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 25,
+          "coordinate": "H3",
+          "visits": 1,
+          "reward_sum": 1.0,
+          "mean_reward": 1.0
+        },
+        {
+          "move": 26,
+          "coordinate": "I3",
+          "visits": 1,
+          "reward_sum": 1.0,
+          "mean_reward": 1.0
+        },
+        {
+          "move": 28,
+          "coordinate": "B4",
+          "visits": 1,
+          "reward_sum": 1.0,
+          "mean_reward": 1.0
+        },
+        {
+          "move": 29,
+          "coordinate": "C4",
+          "visits": 1,
+          "reward_sum": 1.0,
+          "mean_reward": 1.0
+        },
+        {
+          "move": 30,
+          "coordinate": "D4",
+          "visits": 1,
+          "reward_sum": 1.0,
+          "mean_reward": 1.0
+        },
+        {
+          "move": 31,
+          "coordinate": "E4",
+          "visits": 1,
+          "reward_sum": 1.0,
+          "mean_reward": 1.0
+        },
+        {
+          "move": 34,
+          "coordinate": "H4",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 35,
+          "coordinate": "I4",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 36,
+          "coordinate": "A5",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 37,
+          "coordinate": "B5",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 39,
+          "coordinate": "D5",
+          "visits": 1,
+          "reward_sum": 1.0,
+          "mean_reward": 1.0
+        },
+        {
+          "move": 41,
+          "coordinate": "F5",
+          "visits": 1,
+          "reward_sum": 1.0,
+          "mean_reward": 1.0
+        },
+        {
+          "move": 42,
+          "coordinate": "G5",
+          "visits": 1,
+          "reward_sum": 1.0,
+          "mean_reward": 1.0
+        },
+        {
+          "move": 43,
+          "coordinate": "H5",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 45,
+          "coordinate": "A6",
+          "visits": 1,
+          "reward_sum": 1.0,
+          "mean_reward": 1.0
+        },
+        {
+          "move": 50,
+          "coordinate": "F6",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 51,
+          "coordinate": "G6",
+          "visits": 1,
+          "reward_sum": 1.0,
+          "mean_reward": 1.0
+        },
+        {
+          "move": 53,
+          "coordinate": "I6",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 55,
+          "coordinate": "B7",
+          "visits": 1,
+          "reward_sum": 1.0,
+          "mean_reward": 1.0
+        },
+        {
+          "move": 56,
+          "coordinate": "C7",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 57,
+          "coordinate": "D7",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 59,
+          "coordinate": "F7",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 60,
+          "coordinate": "G7",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 62,
+          "coordinate": "I7",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 63,
+          "coordinate": "A8",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 66,
+          "coordinate": "D8",
+          "visits": 1,
+          "reward_sum": 1.0,
+          "mean_reward": 1.0
+        },
+        {
+          "move": 67,
+          "coordinate": "E8",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 68,
+          "coordinate": "F8",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 69,
+          "coordinate": "G8",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 70,
+          "coordinate": "H8",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 71,
+          "coordinate": "I8",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 72,
+          "coordinate": "A9",
+          "visits": 1,
+          "reward_sum": 1.0,
+          "mean_reward": 1.0
+        },
+        {
+          "move": 73,
+          "coordinate": "B9",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 74,
+          "coordinate": "C9",
+          "visits": 1,
+          "reward_sum": 1.0,
+          "mean_reward": 1.0
+        },
+        {
+          "move": 75,
+          "coordinate": "D9",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 76,
+          "coordinate": "E9",
+          "visits": 1,
+          "reward_sum": 1.0,
+          "mean_reward": 1.0
+        },
+        {
+          "move": 77,
+          "coordinate": "F9",
+          "visits": 1,
+          "reward_sum": 1.0,
+          "mean_reward": 1.0
+        },
+        {
+          "move": 78,
+          "coordinate": "G9",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 80,
+          "coordinate": "I9",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        }
+      ],
+      "coordinate": "I1"
+    },
+    {
+      "ply": 4,
+      "player": "O",
+      "move": 48,
+      "algorithm": "alphabeta",
+      "elapsed_ms": 3.3660750000308326,
+      "nodes": 43,
+      "depth": 2,
+      "cutoffs": 8,
+      "iterations": 0,
+      "score": -4,
+      "max_tree_depth": 0,
+      "rollout_moves": 0,
+      "root_children": [],
+      "coordinate": "D6"
+    },
+    {
+      "ply": 5,
+      "player": "X",
+      "move": 47,
+      "algorithm": "mcts",
+      "elapsed_ms": 13.059176000069783,
+      "nodes": 101,
+      "depth": 0,
+      "cutoffs": 0,
+      "iterations": 100,
+      "score": 1.0,
+      "max_tree_depth": 2,
+      "rollout_moves": 4753,
+      "root_children": [
+        {
+          "move": 1,
+          "coordinate": "B1",
+          "visits": 2,
+          "reward_sum": 1.0,
+          "mean_reward": 0.5
+        },
+        {
+          "move": 11,
+          "coordinate": "C2",
+          "visits": 2,
+          "reward_sum": 1.0,
+          "mean_reward": 0.5
+        },
+        {
+          "move": 16,
+          "coordinate": "H2",
+          "visits": 2,
+          "reward_sum": 1.0,
+          "mean_reward": 0.5
+        },
+        {
+          "move": 21,
+          "coordinate": "D3",
+          "visits": 2,
+          "reward_sum": 2.0,
+          "mean_reward": 1.0
+        },
+        {
+          "move": 27,
+          "coordinate": "A4",
+          "visits": 2,
+          "reward_sum": 2.0,
+          "mean_reward": 1.0
+        },
+        {
+          "move": 28,
+          "coordinate": "B4",
+          "visits": 2,
+          "reward_sum": 2.0,
+          "mean_reward": 1.0
+        },
+        {
+          "move": 29,
+          "coordinate": "C4",
+          "visits": 2,
+          "reward_sum": 1.0,
+          "mean_reward": 0.5
+        },
+        {
+          "move": 30,
+          "coordinate": "D4",
+          "visits": 2,
+          "reward_sum": 2.0,
+          "mean_reward": 1.0
+        },
+        {
+          "move": 31,
+          "coordinate": "E4",
+          "visits": 2,
+          "reward_sum": 1.0,
+          "mean_reward": 0.5
+        },
+        {
+          "move": 32,
+          "coordinate": "F4",
+          "visits": 2,
+          "reward_sum": 1.0,
+          "mean_reward": 0.5
+        },
+        {
+          "move": 33,
+          "coordinate": "G4",
+          "visits": 2,
+          "reward_sum": 2.0,
+          "mean_reward": 1.0
+        },
+        {
+          "move": 34,
+          "coordinate": "H4",
+          "visits": 2,
+          "reward_sum": 2.0,
+          "mean_reward": 1.0
+        },
+        {
+          "move": 45,
+          "coordinate": "A6",
+          "visits": 2,
+          "reward_sum": 1.0,
+          "mean_reward": 0.5
+        },
+        {
+          "move": 47,
+          "coordinate": "C6",
+          "visits": 2,
+          "reward_sum": 2.0,
+          "mean_reward": 1.0
+        },
+        {
+          "move": 56,
+          "coordinate": "C7",
+          "visits": 2,
+          "reward_sum": 2.0,
+          "mean_reward": 1.0
+        },
+        {
+          "move": 57,
+          "coordinate": "D7",
+          "visits": 2,
+          "reward_sum": 2.0,
+          "mean_reward": 1.0
+        },
+        {
+          "move": 66,
+          "coordinate": "D8",
+          "visits": 2,
+          "reward_sum": 1.0,
+          "mean_reward": 0.5
+        },
+        {
+          "move": 72,
+          "coordinate": "A9",
+          "visits": 2,
+          "reward_sum": 1.0,
+          "mean_reward": 0.5
+        },
+        {
+          "move": 73,
+          "coordinate": "B9",
+          "visits": 2,
+          "reward_sum": 1.0,
+          "mean_reward": 0.5
+        },
+        {
+          "move": 76,
+          "coordinate": "E9",
+          "visits": 2,
+          "reward_sum": 1.0,
+          "mean_reward": 0.5
+        },
+        {
+          "move": 77,
+          "coordinate": "F9",
+          "visits": 2,
+          "reward_sum": 2.0,
+          "mean_reward": 1.0
+        },
+        {
+          "move": 79,
+          "coordinate": "H9",
+          "visits": 2,
+          "reward_sum": 2.0,
+          "mean_reward": 1.0
+        },
+        {
+          "move": 80,
+          "coordinate": "I9",
+          "visits": 2,
+          "reward_sum": 1.0,
+          "mean_reward": 0.5
+        },
+        {
+          "move": 0,
+          "coordinate": "A1",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 2,
+          "coordinate": "C1",
+          "visits": 1,
+          "reward_sum": 1.0,
+          "mean_reward": 1.0
+        },
+        {
+          "move": 3,
+          "coordinate": "D1",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 4,
+          "coordinate": "E1",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 5,
+          "coordinate": "F1",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 6,
+          "coordinate": "G1",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 7,
+          "coordinate": "H1",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 9,
+          "coordinate": "A2",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 10,
+          "coordinate": "B2",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 12,
+          "coordinate": "D2",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 13,
+          "coordinate": "E2",
+          "visits": 1,
+          "reward_sum": 1.0,
+          "mean_reward": 1.0
+        },
+        {
+          "move": 14,
+          "coordinate": "F2",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 15,
+          "coordinate": "G2",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 17,
+          "coordinate": "I2",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 18,
+          "coordinate": "A3",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 19,
+          "coordinate": "B3",
+          "visits": 1,
+          "reward_sum": 1.0,
+          "mean_reward": 1.0
+        },
+        {
+          "move": 20,
+          "coordinate": "C3",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 22,
+          "coordinate": "E3",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 23,
+          "coordinate": "F3",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 24,
+          "coordinate": "G3",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 25,
+          "coordinate": "H3",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 26,
+          "coordinate": "I3",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 35,
+          "coordinate": "I4",
+          "visits": 1,
+          "reward_sum": 1.0,
+          "mean_reward": 1.0
+        },
+        {
+          "move": 36,
+          "coordinate": "A5",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 37,
+          "coordinate": "B5",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 38,
+          "coordinate": "C5",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 39,
+          "coordinate": "D5",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 41,
+          "coordinate": "F5",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 42,
+          "coordinate": "G5",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 43,
+          "coordinate": "H5",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 44,
+          "coordinate": "I5",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 46,
+          "coordinate": "B6",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 50,
+          "coordinate": "F6",
+          "visits": 1,
+          "reward_sum": 1.0,
+          "mean_reward": 1.0
+        },
+        {
+          "move": 51,
+          "coordinate": "G6",
+          "visits": 1,
+          "reward_sum": 1.0,
+          "mean_reward": 1.0
+        },
+        {
+          "move": 52,
+          "coordinate": "H6",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 53,
+          "coordinate": "I6",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 54,
+          "coordinate": "A7",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 55,
+          "coordinate": "B7",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 58,
+          "coordinate": "E7",
+          "visits": 1,
+          "reward_sum": 1.0,
+          "mean_reward": 1.0
+        },
+        {
+          "move": 59,
+          "coordinate": "F7",
+          "visits": 1,
+          "reward_sum": 1.0,
+          "mean_reward": 1.0
+        },
+        {
+          "move": 60,
+          "coordinate": "G7",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 61,
+          "coordinate": "H7",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 62,
+          "coordinate": "I7",
+          "visits": 1,
+          "reward_sum": 1.0,
+          "mean_reward": 1.0
+        },
+        {
+          "move": 63,
+          "coordinate": "A8",
+          "visits": 1,
+          "reward_sum": 1.0,
+          "mean_reward": 1.0
+        },
+        {
+          "move": 64,
+          "coordinate": "B8",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 65,
+          "coordinate": "C8",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 67,
+          "coordinate": "E8",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 68,
+          "coordinate": "F8",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 69,
+          "coordinate": "G8",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 70,
+          "coordinate": "H8",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 71,
+          "coordinate": "I8",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 74,
+          "coordinate": "C9",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 75,
+          "coordinate": "D9",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 78,
+          "coordinate": "G9",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        }
+      ],
+      "coordinate": "C6"
+    },
+    {
+      "ply": 6,
+      "player": "O",
+      "move": 56,
+      "algorithm": "alphabeta",
+      "elapsed_ms": 3.371493000031478,
+      "nodes": 39,
+      "depth": 2,
+      "cutoffs": 8,
+      "iterations": 0,
+      "score": 108,
+      "max_tree_depth": 0,
+      "rollout_moves": 0,
+      "root_children": [],
+      "coordinate": "C7"
+    },
+    {
+      "ply": 7,
+      "player": "X",
+      "move": 39,
+      "algorithm": "mcts",
+      "elapsed_ms": 12.441105999982938,
+      "nodes": 101,
+      "depth": 0,
+      "cutoffs": 0,
+      "iterations": 100,
+      "score": 1.0,
+      "max_tree_depth": 2,
+      "rollout_moves": 4535,
+      "root_children": [
+        {
+          "move": 13,
+          "coordinate": "E2",
+          "visits": 3,
+          "reward_sum": 2.0,
+          "mean_reward": 0.6666666666666666
+        },
+        {
+          "move": 21,
+          "coordinate": "D3",
+          "visits": 3,
+          "reward_sum": 3.0,
+          "mean_reward": 1.0
+        },
+        {
+          "move": 39,
+          "coordinate": "D5",
+          "visits": 3,
+          "reward_sum": 3.0,
+          "mean_reward": 1.0
+        },
+        {
+          "move": 41,
+          "coordinate": "F5",
+          "visits": 3,
+          "reward_sum": 2.0,
+          "mean_reward": 0.6666666666666666
+        },
+        {
+          "move": 60,
+          "coordinate": "G7",
+          "visits": 3,
+          "reward_sum": 3.0,
+          "mean_reward": 1.0
+        },
+        {
+          "move": 1,
+          "coordinate": "B1",
+          "visits": 2,
+          "reward_sum": 1.0,
+          "mean_reward": 0.5
+        },
+        {
+          "move": 12,
+          "coordinate": "D2",
+          "visits": 2,
+          "reward_sum": 1.0,
+          "mean_reward": 0.5
+        },
+        {
+          "move": 22,
+          "coordinate": "E3",
+          "visits": 2,
+          "reward_sum": 1.0,
+          "mean_reward": 0.5
+        },
+        {
+          "move": 24,
+          "coordinate": "G3",
+          "visits": 2,
+          "reward_sum": 1.0,
+          "mean_reward": 0.5
+        },
+        {
+          "move": 26,
+          "coordinate": "I3",
+          "visits": 2,
+          "reward_sum": 1.0,
+          "mean_reward": 0.5
+        },
+        {
+          "move": 27,
+          "coordinate": "A4",
+          "visits": 2,
+          "reward_sum": 1.0,
+          "mean_reward": 0.5
+        },
+        {
+          "move": 28,
+          "coordinate": "B4",
+          "visits": 2,
+          "reward_sum": 1.0,
+          "mean_reward": 0.5
+        },
+        {
+          "move": 52,
+          "coordinate": "H6",
+          "visits": 2,
+          "reward_sum": 1.0,
+          "mean_reward": 0.5
+        },
+        {
+          "move": 55,
+          "coordinate": "B7",
+          "visits": 2,
+          "reward_sum": 1.0,
+          "mean_reward": 0.5
+        },
+        {
+          "move": 61,
+          "coordinate": "H7",
+          "visits": 2,
+          "reward_sum": 1.0,
+          "mean_reward": 0.5
+        },
+        {
+          "move": 66,
+          "coordinate": "D8",
+          "visits": 2,
+          "reward_sum": 1.0,
+          "mean_reward": 0.5
+        },
+        {
+          "move": 68,
+          "coordinate": "F8",
+          "visits": 2,
+          "reward_sum": 1.0,
+          "mean_reward": 0.5
+        },
+        {
+          "move": 69,
+          "coordinate": "G8",
+          "visits": 2,
+          "reward_sum": 1.0,
+          "mean_reward": 0.5
+        },
+        {
+          "move": 78,
+          "coordinate": "G9",
+          "visits": 2,
+          "reward_sum": 1.0,
+          "mean_reward": 0.5
+        },
+        {
+          "move": 79,
+          "coordinate": "H9",
+          "visits": 2,
+          "reward_sum": 1.0,
+          "mean_reward": 0.5
+        },
+        {
+          "move": 0,
+          "coordinate": "A1",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 2,
+          "coordinate": "C1",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 3,
+          "coordinate": "D1",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 4,
+          "coordinate": "E1",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 5,
+          "coordinate": "F1",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 6,
+          "coordinate": "G1",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 7,
+          "coordinate": "H1",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 9,
+          "coordinate": "A2",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 10,
+          "coordinate": "B2",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 11,
+          "coordinate": "C2",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 14,
+          "coordinate": "F2",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 15,
+          "coordinate": "G2",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 16,
+          "coordinate": "H2",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 17,
+          "coordinate": "I2",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 18,
+          "coordinate": "A3",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 19,
+          "coordinate": "B3",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 20,
+          "coordinate": "C3",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 23,
+          "coordinate": "F3",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 25,
+          "coordinate": "H3",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 29,
+          "coordinate": "C4",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 30,
+          "coordinate": "D4",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 31,
+          "coordinate": "E4",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 32,
+          "coordinate": "F4",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 33,
+          "coordinate": "G4",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 34,
+          "coordinate": "H4",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 35,
+          "coordinate": "I4",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 36,
+          "coordinate": "A5",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 37,
+          "coordinate": "B5",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 38,
+          "coordinate": "C5",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 42,
+          "coordinate": "G5",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 43,
+          "coordinate": "H5",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 44,
+          "coordinate": "I5",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 45,
+          "coordinate": "A6",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 46,
+          "coordinate": "B6",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 50,
+          "coordinate": "F6",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 51,
+          "coordinate": "G6",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 53,
+          "coordinate": "I6",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 54,
+          "coordinate": "A7",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 57,
+          "coordinate": "D7",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 58,
+          "coordinate": "E7",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 59,
+          "coordinate": "F7",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 62,
+          "coordinate": "I7",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 63,
+          "coordinate": "A8",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 64,
+          "coordinate": "B8",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 65,
+          "coordinate": "C8",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 67,
+          "coordinate": "E8",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 70,
+          "coordinate": "H8",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 71,
+          "coordinate": "I8",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 72,
+          "coordinate": "A9",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 73,
+          "coordinate": "B9",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 74,
+          "coordinate": "C9",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 75,
+          "coordinate": "D9",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 76,
+          "coordinate": "E9",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 77,
+          "coordinate": "F9",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 80,
+          "coordinate": "I9",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        }
+      ],
+      "coordinate": "D5"
+    },
+    {
+      "ply": 8,
+      "player": "O",
+      "move": 32,
+      "algorithm": "alphabeta",
+      "elapsed_ms": 3.3130850000588907,
+      "nodes": 30,
+      "depth": 2,
+      "cutoffs": 9,
+      "iterations": 0,
+      "score": 2548,
+      "max_tree_depth": 0,
+      "rollout_moves": 0,
+      "root_children": [],
+      "coordinate": "F4"
+    },
+    {
+      "ply": 9,
+      "player": "X",
+      "move": 45,
+      "algorithm": "mcts",
+      "elapsed_ms": 11.056323000047996,
+      "nodes": 101,
+      "depth": 0,
+      "cutoffs": 0,
+      "iterations": 100,
+      "score": 1.0,
+      "max_tree_depth": 2,
+      "rollout_moves": 3509,
+      "root_children": [
+        {
+          "move": 45,
+          "coordinate": "A6",
+          "visits": 3,
+          "reward_sum": 3.0,
+          "mean_reward": 1.0
+        },
+        {
+          "move": 1,
+          "coordinate": "B1",
+          "visits": 2,
+          "reward_sum": 2.0,
+          "mean_reward": 1.0
+        },
+        {
+          "move": 2,
+          "coordinate": "C1",
+          "visits": 2,
+          "reward_sum": 1.0,
+          "mean_reward": 0.5
+        },
+        {
+          "move": 3,
+          "coordinate": "D1",
+          "visits": 2,
+          "reward_sum": 1.0,
+          "mean_reward": 0.5
+        },
+        {
+          "move": 6,
+          "coordinate": "G1",
+          "visits": 2,
+          "reward_sum": 2.0,
+          "mean_reward": 1.0
+        },
+        {
+          "move": 12,
+          "coordinate": "D2",
+          "visits": 2,
+          "reward_sum": 1.0,
+          "mean_reward": 0.5
+        },
+        {
+          "move": 15,
+          "coordinate": "G2",
+          "visits": 2,
+          "reward_sum": 2.0,
+          "mean_reward": 1.0
+        },
+        {
+          "move": 18,
+          "coordinate": "A3",
+          "visits": 2,
+          "reward_sum": 1.0,
+          "mean_reward": 0.5
+        },
+        {
+          "move": 24,
+          "coordinate": "G3",
+          "visits": 2,
+          "reward_sum": 2.0,
+          "mean_reward": 1.0
+        },
+        {
+          "move": 25,
+          "coordinate": "H3",
+          "visits": 2,
+          "reward_sum": 1.0,
+          "mean_reward": 0.5
+        },
+        {
+          "move": 26,
+          "coordinate": "I3",
+          "visits": 2,
+          "reward_sum": 1.0,
+          "mean_reward": 0.5
+        },
+        {
+          "move": 27,
+          "coordinate": "A4",
+          "visits": 2,
+          "reward_sum": 1.0,
+          "mean_reward": 0.5
+        },
+        {
+          "move": 29,
+          "coordinate": "C4",
+          "visits": 2,
+          "reward_sum": 1.0,
+          "mean_reward": 0.5
+        },
+        {
+          "move": 30,
+          "coordinate": "D4",
+          "visits": 2,
+          "reward_sum": 1.0,
+          "mean_reward": 0.5
+        },
+        {
+          "move": 31,
+          "coordinate": "E4",
+          "visits": 2,
+          "reward_sum": 2.0,
+          "mean_reward": 1.0
+        },
+        {
+          "move": 34,
+          "coordinate": "H4",
+          "visits": 2,
+          "reward_sum": 1.0,
+          "mean_reward": 0.5
+        },
+        {
+          "move": 42,
+          "coordinate": "G5",
+          "visits": 2,
+          "reward_sum": 2.0,
+          "mean_reward": 1.0
+        },
+        {
+          "move": 43,
+          "coordinate": "H5",
+          "visits": 2,
+          "reward_sum": 1.0,
+          "mean_reward": 0.5
+        },
+        {
+          "move": 44,
+          "coordinate": "I5",
+          "visits": 2,
+          "reward_sum": 1.0,
+          "mean_reward": 0.5
+        },
+        {
+          "move": 50,
+          "coordinate": "F6",
+          "visits": 2,
+          "reward_sum": 2.0,
+          "mean_reward": 1.0
+        },
+        {
+          "move": 58,
+          "coordinate": "E7",
+          "visits": 2,
+          "reward_sum": 1.0,
+          "mean_reward": 0.5
+        },
+        {
+          "move": 59,
+          "coordinate": "F7",
+          "visits": 2,
+          "reward_sum": 1.0,
+          "mean_reward": 0.5
+        },
+        {
+          "move": 69,
+          "coordinate": "G8",
+          "visits": 2,
+          "reward_sum": 1.0,
+          "mean_reward": 0.5
+        },
+        {
+          "move": 72,
+          "coordinate": "A9",
+          "visits": 2,
+          "reward_sum": 1.0,
+          "mean_reward": 0.5
+        },
+        {
+          "move": 74,
+          "coordinate": "C9",
+          "visits": 2,
+          "reward_sum": 1.0,
+          "mean_reward": 0.5
+        },
+        {
+          "move": 80,
+          "coordinate": "I9",
+          "visits": 2,
+          "reward_sum": 2.0,
+          "mean_reward": 1.0
+        },
+        {
+          "move": 0,
+          "coordinate": "A1",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 4,
+          "coordinate": "E1",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 5,
+          "coordinate": "F1",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 7,
+          "coordinate": "H1",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 9,
+          "coordinate": "A2",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 10,
+          "coordinate": "B2",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 11,
+          "coordinate": "C2",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 13,
+          "coordinate": "E2",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 14,
+          "coordinate": "F2",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 16,
+          "coordinate": "H2",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 17,
+          "coordinate": "I2",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 19,
+          "coordinate": "B3",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 20,
+          "coordinate": "C3",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 21,
+          "coordinate": "D3",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 22,
+          "coordinate": "E3",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 23,
+          "coordinate": "F3",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 28,
+          "coordinate": "B4",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 33,
+          "coordinate": "G4",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 35,
+          "coordinate": "I4",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 36,
+          "coordinate": "A5",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 37,
+          "coordinate": "B5",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 38,
+          "coordinate": "C5",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 41,
+          "coordinate": "F5",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 46,
+          "coordinate": "B6",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 51,
+          "coordinate": "G6",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 52,
+          "coordinate": "H6",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 53,
+          "coordinate": "I6",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 54,
+          "coordinate": "A7",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 55,
+          "coordinate": "B7",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 57,
+          "coordinate": "D7",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 60,
+          "coordinate": "G7",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 61,
+          "coordinate": "H7",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 62,
+          "coordinate": "I7",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 63,
+          "coordinate": "A8",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 64,
+          "coordinate": "B8",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 65,
+          "coordinate": "C8",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 66,
+          "coordinate": "D8",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 67,
+          "coordinate": "E8",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 68,
+          "coordinate": "F8",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 70,
+          "coordinate": "H8",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 71,
+          "coordinate": "I8",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 73,
+          "coordinate": "B9",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 75,
+          "coordinate": "D9",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 76,
+          "coordinate": "E9",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 77,
+          "coordinate": "F9",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 78,
+          "coordinate": "G9",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "move": 79,
+          "coordinate": "H9",
+          "visits": 1,
+          "reward_sum": 0.0,
+          "mean_reward": 0.0
+        }
+      ],
+      "coordinate": "A6"
+    },
+    {
+      "ply": 10,
+      "player": "O",
+      "move": 24,
+      "algorithm": "alphabeta",
+      "elapsed_ms": 2.7064319999681175,
+      "nodes": 19,
+      "depth": 2,
+      "cutoffs": 8,
+      "iterations": 0,
+      "score": 99999990,
+      "max_tree_depth": 0,
+      "rollout_moves": 0,
+      "root_children": [],
+      "coordinate": "G3"
+    }
+  ],
+  "outcome": -1,
+  "agent_seeds": {
+    "X": 2037,
+    "O": 2055
+  }
+}

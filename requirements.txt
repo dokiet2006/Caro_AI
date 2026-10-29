@@ -1,0 +1,2 @@
+# Python >= 3.10. No pip packages required.
+# GUI uses tkinter (included with standard python.org installers on Windows).

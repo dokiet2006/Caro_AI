@@ -1,0 +1,46 @@
+<!doctype html><html lang="vi"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Caro AI | Kết quả thực nghiệm</title>
+<style>body{font:15px/1.6 system-ui,sans-serif;color:#172033;background:#f1f5f9;margin:0}
+main{max-width:1050px;margin:32px auto;padding:28px;background:white;border-radius:16px}
+h1{line-height:1.2}h2{margin-top:32px}table{border-collapse:collapse;width:100%;font-size:13px}
+th,td{padding:9px;border-bottom:1px solid #dbe2ea;text-align:left}th{background:#edf2f7}
+img{display:block;width:100%;margin:18px 0}code{background:#edf2f7;padding:2px 5px}
+.notice{padding:14px;background:#ecfdf5;border-left:4px solid #0d9488}a{color:#0f766e}
+</style><main><p>CARO 9×9 / AI LAB</p><h1>Kết quả thực nghiệm</h1>
+<p class="notice">Mỗi cấu hình có ít nhất 20 ván, ghép cặp đổi bên X/O. Đây là dữ liệu chạy thật trên máy được ghi bên dưới.</p>
+<p>Seed: <b>2026</b> · Python 3.12.14<br>
+CPU: AMD EPYC 9V74 80-Core Processor<br>Hệ điều hành: Linux-6.18.55-x86_64-with-glibc2.39</p>
+<p>Không đặt thời hạn theo giây. MCTS dùng đúng số iteration; MiniMax tìm đến độ sâu đã chọn.
+Thời gian là trung bình theo tất cả nước đi của tác nhân khảo sát, chỉ đo hàm chọn nước đi.</p>
+<h2>Đối sánh và khảo sát tham số</h2><table><thead><tr><th>Nhóm</th><th>Cấu hình</th>
+<th>Đối thủ</th><th>Thắng-Hòa-Thua</th><th>Tỷ lệ thắng</th><th>ms / nước</th></tr></thead>
+<tbody><tr><td>round_robin</td><td>alphabeta_vs_random</td><td>random</td><td>20-0-0</td><td>100.0%</td><td>2.378</td></tr>
+<tr><td>round_robin</td><td>mcts_vs_random</td><td>random</td><td>20-0-0</td><td>100.0%</td><td>33.744</td></tr>
+<tr><td>round_robin</td><td>mcts_vs_alphabeta</td><td>alphabeta</td><td>0-0-20</td><td>0.0%</td><td>34.256</td></tr>
+<tr><td>c_sweep</td><td>c=0.5</td><td>random</td><td>20-0-0</td><td>100.0%</td><td>31.504</td></tr>
+<tr><td>c_sweep</td><td>c=1.0</td><td>random</td><td>20-0-0</td><td>100.0%</td><td>28.516</td></tr>
+<tr><td>c_sweep</td><td>c=1.4</td><td>random</td><td>20-0-0</td><td>100.0%</td><td>25.952</td></tr>
+<tr><td>c_sweep</td><td>c=2.0</td><td>random</td><td>19-0-1</td><td>95.0%</td><td>25.335</td></tr>
+<tr><td>iteration_sweep</td><td>iterations=100</td><td>random</td><td>15-0-5</td><td>75.0%</td><td>7.548</td></tr>
+<tr><td>iteration_sweep</td><td>iterations=300</td><td>random</td><td>20-0-0</td><td>100.0%</td><td>24.937</td></tr>
+<tr><td>iteration_sweep</td><td>iterations=500</td><td>random</td><td>19-0-1</td><td>95.0%</td><td>45.373</td></tr></tbody></table>
+<img src="01_c_rates.svg" alt="Tỷ lệ thắng hòa thua theo c">
+<img src="02_iteration_rates.svg" alt="Tỷ lệ thắng hòa thua theo iteration">
+<img src="03_iteration_time.svg" alt="Thời gian xử lý theo iteration">
+<h2>Hiệu quả cắt tỉa Alpha-Beta</h2><p>Hai thuật toán dùng cùng hàm đánh giá, độ sâu,
+thứ tự và tập ứng viên; kiểm tra cùng nước đi và giá trị trước khi xuất bảng.</p>
+<table><tr><th>Thế cờ</th><th>Nước chọn</th><th>Nút MiniMax</th><th>Nút Alpha-Beta</th>
+<th>Giảm số nút</th></tr><tr><td>empty</td><td>E5</td><td>112</td><td>31</td><td>72.3%</td></tr>
+<tr><td>opening</td><td>D6</td><td>1111</td><td>139</td><td>87.5%</td></tr>
+<tr><td>middle</td><td>E3</td><td>1111</td><td>175</td><td>84.2%</td></tr>
+<tr><td>threat</td><td>F5</td><td>1001</td><td>110</td><td>89.0%</td></tr></table>
+<h2>Cách đọc kết quả</h2><p>20 ván/cấu hình là mức tối thiểu, còn nhiều biến động thống kê.
+Không kết luận MCTS luôn thắng hoặc tăng c/iteration luôn làm tăng tỷ lệ thắng.
+MCTS cơ sở rollout ngẫu nhiên đến hết ván, có thể bỏ lỡ đe dọa chiến thuật với ngân sách nhỏ.
+MiniMax giới hạn K ứng viên nên không bảo đảm tối ưu trên toàn bộ cây hợp lệ.</p>
+<p>Không so trực tiếp “nút” của hai họ thuật toán: Alpha-Beta đếm trạng thái gọi đệ quy;
+MCTS đếm nút cây được tạo, tách khỏi số bước rollout.</p>
+<p><a href="summary.csv">Bảng tổng hợp CSV</a> · <a href="games.csv">Từng ván CSV</a> ·
+<a href="games.jsonl">Nhật ký từng nước</a> · <a href="metadata.json">Cấu hình máy và tham số</a></p>
+</main></html>
